@@ -40,3 +40,7 @@ NOTES
 - XymonTray does not generate toast, balloon, or sound notifications.
 - The browser extension works without the optional tray integration.
 - Version 0.9 is a pre-1.0 release and still has planned usability refinements.
+
+LICENCE
+-------
+This project is licensed under the MIT Licence. See the LICENCE file for details.
