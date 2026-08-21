@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>XymonTray settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<main>
+  <h1>XymonTray</h1>
+  <form id="form">
+    <fieldset>
+      <legend>Configuration</legend>
+      <label>Display name<input id="name"></label>
+      <label>Xymon page URL<input id="url"></label>
+      <label class="check"><input id="tray" type="checkbox"> Enable XymonTray integration</label>
+      <label>Poll every <input id="poll" type="number" min="1"> minutes</label>
+      <label>Mark tray stale after <input id="stale" type="number" min="1"> minutes</label>
+      <div id="errors" hidden></div>
+      <button>Save</button>
+    </fieldset>
+  </form>
+
+  <section>
+    <h2>Status</h2>
+    <dl>
+      <div><dt>State</dt><dd id="state"></dd></div>
+      <div><dt>Last checked</dt><dd id="checked"></dd></div>
+      <div><dt>Favicon URL</dt><dd id="fav"></dd></div>
+      <div id="redirect-row" hidden><dt>Redirected to</dt><dd id="redirect"></dd></div>
+      <div><dt>Icon definitions</dt><dd id="defs"></dd></div>
+      <div><dt>Detail</dt><dd id="detail"></dd></div>
+    </dl>
+    <p id="not-configured" hidden>Configure a Xymon page URL before checking its status.</p>
+    <button id="check" type="button">Check now</button>
+    <button id="open-redirect" type="button" hidden>Open redirect target</button>
+  </section>
+
+  <section>
+    <h2>Troubleshooting</h2>
+    <p>Refresh icon definitions after a theme change or when the detected status appears incorrect. This re-reads the seven Xymon favicon files.</p>
+    <button id="refresh" type="button">Refresh icon definitions</button>
+    <details>
+      <summary>Fingerprint details</summary>
+      <code id="fingerprint"></code>
+      <pre id="fingerprints"></pre>
+    </details>
+  </section>
+</main>
+<script type="module" src="options.js"></script>
+</body>
+</html>

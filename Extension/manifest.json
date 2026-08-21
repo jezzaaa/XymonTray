@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "XymonTray",
+  "version": "0.9.0",
+  "description": "Displays the favicon state of a configured Xymon page.",
+  "permissions": [
+    "alarms",
+    "storage",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "file:///*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "XymonTray: unknown",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/xymon-unknown-16.png",
+      "32": "icons/xymon-unknown-32.png",
+      "48": "icons/xymon-unknown-48.png",
+      "128": "icons/xymon-unknown-128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/xymon-green-16.png",
+    "32": "icons/xymon-green-32.png",
+    "48": "icons/xymon-green-48.png",
+    "128": "icons/xymon-green-128.png"
+  }
+}
