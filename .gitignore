@@ -1,0 +1,19 @@
+# Runtime files
+host.log
+status.json
+current.ico
+tray.lock
+stop.flag
+
+# Release packages
+*.zip
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# PowerShell
+*.pshistory
