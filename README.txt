@@ -41,6 +41,16 @@ NOTES
 - The browser extension works without the optional tray integration.
 - Version 0.9 is a pre-1.0 release and still has planned usability refinements.
 
+SEE ALSO
+--------
+
+For implementation and design details, refer to:
+
+    IMPLEMENTATION.md
+
+This document describes the internal architecture, Native Messaging integration,
+tray operation and deployment model.
+
 LICENCE
 -------
 This project is licensed under the MIT Licence. See the LICENCE file for details.
