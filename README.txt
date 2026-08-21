@@ -203,7 +203,7 @@ This document describes the internal architecture, Native Messaging integration,
 tray operation and deployment model.
 
 LICENCE
---------
+-------
 
 XymonTray is released under the MIT License.
 
