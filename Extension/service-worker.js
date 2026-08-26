@@ -97,7 +97,8 @@ async function poll(force = false) {
       return { ok: true, runtimeState: await reset(config, "not-configured") };
     }
     if (cacheUrl !== config.xymonUrl) await reset(config, "awaiting-first-check");
-    if (force || !page || !refs) {
+    page = await discover(config.xymonUrl);
+    if (force || !refs) {
       page = await discover(config.xymonUrl);
       refs = await references(page);
     }
